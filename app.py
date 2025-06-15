@@ -185,11 +185,12 @@ def preprocess_image(image):
     return img_array
 
 def predict_disease(model, image):
-    """Make prediction on the processed image"""
     try:
         img_array = preprocess_image(image)
         predictions = model.predict(img_array, verbose=0)
-        confidence_scores = tf.nn.softmax(predictions[0]).numpy()
+
+        # Don't reapply softmax if model already ends with softmax
+        confidence_scores = predictions[0]
         predicted_class_index = np.argmax(confidence_scores)
         confidence = float(confidence_scores[predicted_class_index])
         
@@ -197,6 +198,7 @@ def predict_disease(model, image):
     except Exception as e:
         st.error(f"Error during prediction: {str(e)}")
         return None, None
+
 
 # Load model
 model = load_model()
