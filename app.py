@@ -39,10 +39,23 @@ st.markdown("""
 def load_model():
     """Load the trained model with error handling"""
     try:
-        return tf.keras.models.load_model('best_model.h5')
+        model_path = "best_model.h5"
+
+        if not os.path.exists(model_path):
+            import gdown
+            file_id = "1VHEHLSQ0d_QKvgeZjlheDixwLRwiBMCw"
+            url = f"https://drive.google.com/uc?id={file_id}"
+            gdown.download(url, model_path, quiet=False)
+
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file {model_path} was not downloaded.")
+
+        return tf.keras.models.load_model(model_path)
+    
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
         st.stop()
+
 
 # Disease information database
 DISEASE_INFO = {
