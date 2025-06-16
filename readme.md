@@ -1,141 +1,255 @@
-Here’s a clean, informative, and developer-friendly `README.md` for your GitHub project:
-
----
-
 # 🌿 Plant Disease Detection App
 
-An AI-powered web application that detects plant diseases from leaf images using a Convolutional Neural Network (CNN) model — all deployable with **Streamlit**.
-
-🧪 Try it out: [Live Demo](https://plant-disease-detection-app-app-zya8ie.streamlit.app/)
-
-📁 GitHub Repo: [github.com/zaidzaihan/plant-disease-detection-app](https://github.com/zaidzaihan/plant-disease-detection-app)
-
----
-
-## 📸 What This App Does
-
-Upload a **close-up image of a plant leaf**, and the app will:
-
-* Detect if the plant is **healthy** or affected by a **specific disease**
-* Show disease **name**, **severity**, **description**, and **treatment**
-* Provide actionable tips, even when confidence is low
-
-### 🧠 Trained to Recognize:
-
-| Plant           | Diseases Detected                                                                                                                                  |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Tomato**      | Bacterial Spot, Early Blight, Late Blight, Leaf Mold, Septoria Leaf Spot, Target Spot, Yellow Leaf Curl Virus, Mosaic Virus, Spider Mites, Healthy |
-| **Potato**      | Early Blight, Late Blight, Healthy                                                                                                                 |
-| **Bell Pepper** | Bacterial Spot, Healthy                                                                                                                            |
-
-> 💡 This system is ideal for farmers, agronomists, and agriculture students who want fast, visual diagnosis using a simple web interface.
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue?logo=python)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![View App](https://img.shields.io/badge/Streamlit-Demo-green?logo=streamlit)](https://plant-disease-detection-app-app-zya8ie.streamlit.app/)
+[![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/zaidzaihan/plant-disease-detection-app)
 
 ---
 
-## 🛠️ Installation & Deployment Guide
+## 🧠 Overview
 
-### 🔁 Clone the Repository
+This AI-powered app detects plant diseases from images of leaves using a pre-trained Convolutional Neural Network (CNN). Built with **Streamlit**, it provides farmers, gardeners, and researchers with fast, reliable disease detection and treatment advice.
+
+🧪 **Try it now**: [plant-disease-detection-app-app-zya8ie.streamlit.app](https://plant-disease-detection-app-app-zya8ie.streamlit.app/)
+
+---
+
+## 🩺 What It Can Detect
+
+The model was trained to detect **15 conditions** across **3 plant types**:
+
+### 🥔 Potato
+- Early Blight
+- Late Blight
+- Healthy
+
+### 🌶️ Bell Pepper
+- Bacterial Spot
+- Healthy
+
+### 🍅 Tomato
+- Bacterial Spot
+- Early Blight
+- Late Blight
+- Leaf Mold
+- Septoria Leaf Spot
+- Spider Mites
+- Target Spot
+- Yellow Leaf Curl Virus
+- Mosaic Virus
+- Healthy
+
+Each diagnosis includes:
+- 🌡 **Severity level**
+- 📄 **Description**
+- 💊 **Recommended treatment**
+
+---
+
+## 🖼 Screenshots
+
+<p align="center">
+  <img src="screenshot/app_ui.png" alt="Streamlit App UI" width="800"/>
+  <img src="screenshot/app_upload_img.png" alt="Streamlit App Upload Interface" width="800"/>
+  <img src="screenshot/analysis_example.png" alt="Streamlit App Analysis Result Example" width="800"/>
+</p>
+
+
+---
+
+## ⚙️ Environment Setup
+
+> ✅ Tested on **Python 3.11.9**  
+> ⚠️ TensorFlow **does not support** Python 3.12 or 3.13 as of now.
+
+### 📦 Requirements
+
+Install all required packages:
+```bash
+pip install -r requirements.txt
+
+Awesome!! Let’s upgrade your `README.md` to include:
+
+✅ **Badges** (for Python version, license, and Streamlit app link)
+✅ **Screenshots section** to showcase your app visually
+✅ Still clean, friendly, and easy for devs and non-devs
+
+---
+
+Here’s your new 🔥 enhanced `README.md`:
+
+````markdown
+# 🌿 Plant Disease Detection App
+
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue?logo=python)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![View App](https://img.shields.io/badge/Streamlit-Demo-green?logo=streamlit)](https://plant-disease-detection-app-app-zya8ie.streamlit.app/)
+[![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/zaidzaihan/plant-disease-detection-app)
+
+---
+
+## 🧠 Overview
+
+This AI-powered app detects plant diseases from images of leaves using a pre-trained Convolutional Neural Network (CNN). Built with **Streamlit**, it provides farmers, gardeners, and researchers with fast, reliable disease detection and treatment advice.
+
+🧪 **Try it now**: [plant-disease-detection-app-app-zya8ie.streamlit.app](https://plant-disease-detection-app-app-zya8ie.streamlit.app/)
+
+---
+
+## 🩺 What It Can Detect
+
+The model was trained to detect **15 conditions** across **3 plant types**:
+
+### 🥔 Potato
+- Early Blight
+- Late Blight
+- Healthy
+
+### 🌶️ Bell Pepper
+- Bacterial Spot
+- Healthy
+
+### 🍅 Tomato
+- Bacterial Spot
+- Early Blight
+- Late Blight
+- Leaf Mold
+- Septoria Leaf Spot
+- Spider Mites
+- Target Spot
+- Yellow Leaf Curl Virus
+- Mosaic Virus
+- Healthy
+
+Each diagnosis includes:
+- 🌡 **Severity level**
+- 📄 **Description**
+- 💊 **Recommended treatment**
+
+---
+
+## 🖼 Screenshots
+
+| Upload Leaf Image | Detection Results |
+|-------------------|-------------------|
+| ![upload](screenshots/upload.png) | ![result](screenshots/result.png) |
+
+
+---
+
+## ⚙️ Environment Setup
+
+> ✅ Tested on **Python 3.11.9**  
+> ⚠️ TensorFlow **does not support** Python 3.12 or 3.13 as of now.
+
+### 📦 Requirements
+
+Install all required packages:
+```bash
+pip install -r requirements.txt
+````
+
+---
+
+## 🚀 Running Locally
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/zaidzaihan/plant-disease-detection-app.git
 cd plant-disease-detection-app
 ```
 
-### 🐍 Create a Virtual Environment (optional but recommended)
+### 2. (Optional) Create a Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 📦 Install Dependencies
+### 3. Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 📥 Download the Model Automatically
-
-The app uses `gdown` to fetch the pre-trained model from Google Drive if it's not present in the local directory. No extra steps required.
-
-But if you'd like to manually download it:
-
-* File ID: `1VHEHLSQ0d_QKvgeZjlheDixwLRwiBMCw`
-* Link: [https://drive.google.com/uc?id=1VHEHLSQ0d\_QKvgeZjlheDixwLRwiBMCw](https://drive.google.com/uc?id=1VHEHLSQ0d_QKvgeZjlheDixwLRwiBMCw)
-* Save it as: `best_model.h5` in the root directory
-
-### ▶️ Run the App Locally
+### 4. Run the App
 
 ```bash
 streamlit run app.py
 ```
 
-> App will launch in your default browser at `http://localhost:8501`
+Then open your browser to [http://localhost:8501](http://localhost:8501).
 
 ---
 
-## 🌐 Deploy to Streamlit Cloud
+## ☁️ Deploying on Streamlit Cloud
 
-1. Fork or clone this repo.
-2. Create a free account at [streamlit.io/cloud](https://streamlit.io/cloud).
-3. Connect your GitHub and click **“New App”**.
-4. Select your forked repo, and set `app.py` as the main file.
-5. 🎉 Done! The app will auto-install requirements and deploy.
+1. Fork this repository to your own GitHub
+2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
+3. Click **“New App”** > Select your repo
+4. Set `app.py` as the main file
+5. Click Deploy 🚀
 
----
-
-## 🧠 How the AI Model Works
-
-* Input: 224x224 RGB images
-* Framework: **TensorFlow / Keras**
-* Architecture: CNN fine-tuned on a dataset of labeled plant leaf images
-* Output: Disease class (e.g., `Tomato_Late_blight`) and confidence score
-* Disease mapping is hardcoded in the `DISEASE_INFO` dictionary for detailed descriptions and treatment suggestions.
+> 📦 The trained model (`best_model.h5`) is downloaded automatically using `gdown` on first launch.
 
 ---
 
-## 📂 Folder Structure
+## 🧬 How It Works
+
+* **Input**: 224x224 RGB image of a plant leaf
+* **Model**: CNN trained with TensorFlow
+* **Output**: Softmax prediction of class with confidence
+* **Result**: Displays plant name, disease, severity, confidence level, description, and treatment
+
+---
+
+## 📂 Project Structure
 
 ```
 .
 ├── app.py                # Main Streamlit app
-├── best_model.h5         # Trained Keras model (auto-downloaded if missing)
-├── requirements.txt      # Dependencies
-└── README.md             # You're here!
+├── requirements.txt      # Python dependencies
+├── README.md             # This file!
+└── (auto-downloads)      # Model from Google Drive via gdown
 ```
 
 ---
 
-## 🤝 Contribution
+## 💡 Tips for Best Results
 
-Have an idea to improve the app?
+* Use clear, **close-up leaf images**
+* Ensure **good lighting**
+* Avoid blur, noise, and background clutter
+* Focus on leaves showing visible symptoms
 
-* Add support for more plant types
-* Improve the CNN model or training pipeline
-* Add multilingual support
+---
 
-Feel free to open issues or PRs!
+## 🧑‍💻 Contributions
+
+Feel free to:
+
+* Improve model accuracy
+* Add new plant types or diseases
+* Translate into local languages
+* Style or optimize UI
+
+PRs and issues are always welcome! 🙌
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-Feel free to use it, modify it, and share it!
+This project is licensed under the **MIT License** — you're free to use, modify, and distribute it.
 
 ---
 
-## 🙌 Credits
+## 👨‍🔬 Author
 
-* Developed by [Zaid Zaihan](https://github.com/zaidzaihan)
-* Powered by Streamlit and TensorFlow
-* Trained on public plant disease datasets
+Built by **[Zaid Zaihan & Adha Rizwan](https://github.com/zaidzaihan/plant-disease-detection-app)**
+Inspired by a mission to empower farmers with accessible AI.
 
 ---
 
-Let me know if you'd like:
-
-* A section on how to retrain the model
-* Badges (for license, Streamlit app, etc.)
-* Screenshots or GIF previews
-  I can add them for you.
+*“Made with ❤️ for the green thumbs of the world.”*
