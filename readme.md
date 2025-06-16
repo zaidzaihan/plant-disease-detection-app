@@ -49,12 +49,21 @@ Each diagnosis includes:
 
 ## 🖼 Screenshots
 
+
 <p align="center">
-  <img src="screenshots/app_ui.png" alt="Streamlit App UI" width="800"/>
-  <img src="screenshots/app_upload_img.png" alt="Streamlit App Upload Interface" width="800"/>
-  <img src="screenshots/analysis_example.png" alt="Streamlit App Analysis Result Example" width="800"/>
+  <img src="screenshots/app_ui.png" alt="Streamlit App UI" width="800"/><br>
+  <em>Main interface of the Plant Disease Detection web app</em>
 </p>
 
+<p align="center">
+  <img src="screenshots/app_upload_img.png" alt="Streamlit App Upload Interface" width="800"/><br>
+  <em>User uploads a close-up leaf image using the sidebar</em>
+</p>
+
+<p align="center">
+  <img src="screenshots/analysis_example.png" alt="Streamlit App Analysis Result Example" width="800"/><br>
+  <em>Prediction results with disease info, confidence score, and treatment tips</em>
+</p>
 
 ---
 
