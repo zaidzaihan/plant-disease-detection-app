@@ -50,9 +50,9 @@ Each diagnosis includes:
 ## 🖼 Screenshots
 
 <p align="center">
-  <img src="screenshot/app_ui.png" alt="Streamlit App UI" width="800"/>
-  <img src="screenshot/app_upload_img.png" alt="Streamlit App Upload Interface" width="800"/>
-  <img src="screenshot/analysis_example.png" alt="Streamlit App Analysis Result Example" width="800"/>
+  <img src="screenshots/app_ui.png" alt="Streamlit App UI" width="800"/>
+  <img src="screenshots/app_upload_img.png" alt="Streamlit App Upload Interface" width="800"/>
+  <img src="screenshots/analysis_example.png" alt="Streamlit App Analysis Result Example" width="800"/>
 </p>
 
 
